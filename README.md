@@ -1,6 +1,9 @@
 # RobustnessPlots
 Codes generating the plots in "Robustness of contextuality under different types of noise as quantifiers for parity-oblivious multiplexing tasks", available at https://arxiv.org/abs/2406.12773.
 
+# Requirements
+Requires functions available at https://github.com/pjcavalcanti/SimplexEmbeddingGPT. See README from that repository for further instructions.
+
 # Functions
 - Depolarised3to1PORAC(theta): Gives the sets of states, effects, the unit vector and the maximally mixed state for a 3-to-1 parity-oblivious multiplexing scenario implemented on a qubit, such that all states form an angle theta with respect to the Z axis of the Bloch sphere.
 - Dephased3to1PORAC(theta,basis): Gives the esets of states, effects and the unit vector for a a 3-to-1 parity-oblivious multiplexing scenario implemented on a qubit, such that all states form an angle theta with respect to the Z axis of the Bloch sphere. Here the input basis is a collection of effects that characterise the dephasing axis.

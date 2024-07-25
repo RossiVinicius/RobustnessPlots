@@ -4,7 +4,12 @@ Codes generating the plots in "Robustness of contextuality under different types
 # Requirements
 Requires functions available at https://github.com/pjcavalcanti/SimplexEmbeddingGPT. See README from that repository for further instructions.
 
-# Functions
+# Files
+## dephasedEmbedding.py
+Contains a modification from the linear program at https://github.com/pjcavalcanti/SimplexEmbeddingGPT, computing now the robustness of contextuality to dephasing noise instead of depolarising noise. See Appendix B of the main paper for the reasoning behind this modification.
+
+## plots.py
+Contains functions generating the plots in the main paper. In particular:
 - Depolarised3to1PORAC(theta): Gives the sets of states, effects, the unit vector and the maximally mixed state for a 3-to-1 parity-oblivious multiplexing scenario implemented on a qubit, such that all states form an angle theta with respect to the Z axis of the Bloch sphere.
 - Dephased3to1PORAC(theta,basis): Gives the esets of states, effects and the unit vector for a a 3-to-1 parity-oblivious multiplexing scenario implemented on a qubit, such that all states form an angle theta with respect to the Z axis of the Bloch sphere. Here the input basis is a collection of effects that characterise the dephasing axis.
 - AnalyticalRobustness(x): Calculates the analytical robustness of depolarisation as a function of success rate as in Eq. 11 of the paper.
